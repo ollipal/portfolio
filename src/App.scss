@@ -9,6 +9,42 @@ html {
 	padding: 0;
 }
 
+:root {
+  /*State*/
+  --display-form: inline-block;
+  --display-repw: inline;
+  --display-main: none;
+  --display-save: none;
+  --display-what: none;
+  --display-advanced: inline;
+  --inner-height: 100vh; /*temporary*/
+  /*Theme*/
+  --col-primary: #494949;
+  --col-secondary: black;
+  --transition-speed: 150ms;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--col-primary) var(--col-secondary);
+}
+/* Chrome, Edge, and Safari scrollbar */
+::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--col-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--col-primary);
+}
+::selection {
+  color: var(--col-secondary);
+  background: var(--col-primary);
+}
+
 .aligner {
 	display: flex;
 	align-items: center;
@@ -17,6 +53,7 @@ html {
 
 .title-container {
 	height: 50px;
+  color: #e1e1e1;
 }
 
 .title-styles {
@@ -27,6 +64,7 @@ html {
 .header-icon {
 	height: 150px;
 	width: 150px;
+  color: #e1e1e1;
 }
 
 header {
@@ -38,7 +76,7 @@ header {
 	-webkit-background-size: cover;
 	text-align: center;
 	overflow: hidden;
-	background-color: #e9d5a1;
+	background-color: #1f1f1f;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -47,7 +85,12 @@ header {
 	padding-bottom: 0;
 }
 
+.my-name {
+  color: #e1e1e1;
+}
+
 .language-icon {
+	visibility: hidden;
 	font-size: 50px;
 	cursor: pointer;
 }
@@ -64,6 +107,10 @@ header {
 	color: white;
 }
 
+.github-corner {
+	display: none;
+}
+
 .skills-tile {
 	background-color: transparentize(#F8F5F4, 0.95);
 	padding: 10px 10px 5px 10px;
@@ -72,9 +119,17 @@ header {
 	border-radius: 8px;
 }
 
+.skills-tile > i > p {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+}
+
+.experience-text {
+  margin: 0 !important;
+}
+
 .language {
 	font-size: 25px;
-	background-color: #e9d5a1;
+	background-color: #1f1f1f;
 	padding-bottom: 10px;
 	padding-top: 80px;
 }
@@ -123,7 +178,9 @@ header h1 {
 
 .foto img {
 	display: block;
-	width: 100%;
+	max-width:100%;
+  width: auto;
+  height: auto;
 }
 
 .foto div {
@@ -244,10 +301,11 @@ header h1 {
 	text-align: left !important;
 	padding: 5px 8px 5px 8px !important;
 	vertical-align: baseline;
-	background-color: #f9f5e9 !important;
-	color: black;
+/* 	background-color: #f9f5e9 !important;
+	color: black; */
+  color: white !important; 
 	font-weight: lighter !important;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 .vertical-timeline-element-date {
@@ -419,11 +477,14 @@ header h1 {
 .hobbies-tile {
  background-color: transparentize(#F8F5F4, 0.95);
  padding: 10px 10px 5px 10px;
- width: 130px;
+ width: 100px;
  margin: 5px 0 5px 0;
  border-radius: 8px;
 }
 
+.hobbies-tile > p {
+  font-size: 70%;
+ }
 
 footer {
 	background: #1F1F1F;

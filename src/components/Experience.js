@@ -5,45 +5,50 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Badge from "react-bootstrap/Badge";
+import { MdWork } from 'react-icons/md';
+import { MdSchool } from 'react-icons/md';
 
 class Experience extends Component {
   render() {
     if (this.props.resumeExperience && this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.experience;
       var work = this.props.resumeExperience.map(function (work, i) {
-        const technologies = work.technologies;
+        //const technologies = work.technologies;
         const mainTechnologies = work.mainTech;
 
         var mainTech = mainTechnologies.map((technology, i) => {
           return (
-            <Badge pill className="main-badge mr-2 mb-2" key={i}>
+            <Badge pill style={{backgroundColor: work.type === "work" ? "#53cbce" : "#e76c5f"}} className="experience-badge mr-2 mb-2" key={i}>
               {technology}
             </Badge>
           );
         });
-        var tech = technologies.map((technology, i) => {
+        let textProcessed = work.text.map((t, i) => {
+          return (
+            <p key={i} className="experience-text">
+              {t}
+            </p>
+          );
+        });
+        /* var tech = technologies.map((technology, i) => {
           return (
             <Badge pill className="experience-badge mr-2 mb-2" key={i}>
               {technology}
             </Badge>
           );
-        });
+        }); */
         return (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date={work.years}
             iconStyle={{
-              background: "#AE944F",
+              background: work.type === "work" ? "#01a2a5" : "#c84224",
               color: "#fff",
               textAlign: "center",
             }}
-            icon={<i className="fab fa-angular experience-icon"></i>}
+            icon={work.type === "work" ? <MdWork/> : <MdSchool/>}
             key={i}
           >
-            <div style={{ textAlign: "left", marginBottom: "4px" }}>
-              {mainTech}
-            </div>
-
             <h3
               className="vertical-timeline-element-title"
               style={{ textAlign: "left" }}
@@ -56,7 +61,13 @@ class Experience extends Component {
             >
               {work.company}
             </h4>
-            <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
+            <div style={{ textAlign: "left", marginTop: "8px", marginBottom: "4px" }}>
+              {textProcessed}
+            </div>
+            <div style={{ textAlign: "left", marginTop: "15px", marginBottom: "4px" }}>
+              {mainTech}
+            </div>
+            {/* <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div> */}
           </VerticalTimelineElement>
         );
       });
@@ -78,7 +89,7 @@ class Experience extends Component {
             {work}
             <VerticalTimelineElement
               iconStyle={{
-                background: "#AE944F",
+                background: "#efe1bd",
                 color: "#fff",
                 textAlign: "center",
               }}

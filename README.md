@@ -60,7 +60,7 @@ homepage property or json data won't load.
 <a href="https://github.com/catalinmiron/react-typical">React Typical</a> <br/>
 <a href="https://iconify.design/icon-sets/?query=angular">Iconify Design</a> <br/>
 <a href="https://www.w3docs.com/snippets/css/how-to-create-polaroid-image-with-css.html#">Polaroid effect</a> <br/>
-<a href="https://tholman.com/github-corners/">GitHub Ref Corner</a>
+<!-- <a href="https://tholman.com/github-corners/">GitHub Ref Corner</a> -->
 
 <h3>:memo: Changelog</h3>
 
