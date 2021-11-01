@@ -138,11 +138,33 @@
         ]
       },
       {
+        "type": "hack",
+        "company": "Junction",
+        "title": "Hackatchon challenge winner",
+        "years": "November 2018",
+        "text": [
+          "Track: AI & Big Data",
+          "Partner: Cisco",
+          "Web based data visualization of Cisco’s router network in Europe’s biggest Hackathon"
+        ],
+        "mainTech": [
+          "Go",
+          "React",
+          "Javascript",
+          "D3.js",
+          "AWS"
+        ]
+      },
+      {
         "type": "work",
         "company": "Metso Oyj",
         "title": "Trainee, R&D Laboratory",
         "years": "May 2017 - August 2018",
-        "text": ["Research and testing of industrial valve designs. Automation of test data processing into documents for repetitive tasks."],
+        "text": [
+          "• Research and testing of industrial valve designs",
+          "• Automation of test data processing into documents for repetitive tasks",
+          "• Development of better, more automated and less error prone testing and data processing tools"
+        ],
         "mainTech": [
           "Python",
           "Excel",

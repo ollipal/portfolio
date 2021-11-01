@@ -7,6 +7,7 @@ import "react-vertical-timeline-component/style.min.css";
 import Badge from "react-bootstrap/Badge";
 import { MdWork } from 'react-icons/md';
 import { MdSchool } from 'react-icons/md';
+import { RiMedalFill } from 'react-icons/ri';
 
 class Experience extends Component {
   render() {
@@ -18,7 +19,7 @@ class Experience extends Component {
 
         var mainTech = mainTechnologies.map((technology, i) => {
           return (
-            <Badge pill style={{backgroundColor: work.type === "work" ? "#53cbce" : "#e76c5f"}} className="experience-badge mr-2 mb-2" key={i}>
+            <Badge pill style={{backgroundColor: ["work", "hack"].includes(work.type) ? "#53cbce" : "#e76c5f"}} className="experience-badge mr-2 mb-2" key={i}>
               {technology}
             </Badge>
           );
@@ -42,11 +43,17 @@ class Experience extends Component {
             className="vertical-timeline-element--work"
             date={work.years}
             iconStyle={{
-              background: work.type === "work" ? "#01a2a5" : "#c84224",
+              background: ["work", "hack"].includes(work.type) ? "#01a2a5" : "#c84224",
               color: "#fff",
               textAlign: "center",
             }}
-            icon={work.type === "work" ? <MdWork/> : <MdSchool/>}
+            icon={
+              work.type === "work"
+                ? <MdWork/>
+                : work.type === "hack"
+                  ? <RiMedalFill/>
+                  : <MdSchool/>
+            }
             key={i}
           >
             <h3
