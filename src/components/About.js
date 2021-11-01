@@ -76,9 +76,7 @@ class About extends Component {
                       whiteSpace:"pre-wrap",
                     }}
                   >
-                    <br />
                     <span className="wave">{hello}!</span>
-                    <br />
                     <br />
                     {about}
                   </div>
