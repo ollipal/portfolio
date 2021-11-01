@@ -14,7 +14,7 @@
       {
         "title": "classified.html",
         "startDate": "2020",
-        "description": "Portable offline encryption solution that stores everything into a single .html file, which can be accessed from terminal and browser.",
+        "description": "Portable offline encryption solution that stores everything into a single .html file, which can be accessed from terminal and browser. No dependencies, fully written in Vanilla JavaScript.",
         "images": [
           "images/portfolio/classifiedhtml.png"
         ],
@@ -37,7 +37,7 @@
       {
         "title": "sshkeyboard",
         "startDate": "2021",
-        "description": "The only keyboard event callback library that works everywhere, even when used through an SSH connection (hence the name). Documentation build process and running tests/formatters is 100% automated",
+        "description": "The only Python keyboard event callback library that works everywhere, even when used through an SSH connection (hence the name). Documentation build process and running tests/formatters is 100% automated",
         "images": [
           "images/portfolio/sshkeyboard.png"
         ],
@@ -56,7 +56,7 @@
       {
         "title": "Firebase Auth",
         "startDate": "2021",
-        "description": "My custom authentication solution to build and deploy mobile friendly websites with authentication and realtime database connection quickly.",
+        "description": "My custom authentication solution to build and deploy mobile friendly websites with authentication and realtime database connection quickly. It leverages Firebase Authentication, but has an improved ui and has more features.",
         "images": [
           "images/portfolio/firebase-auth.png"
         ],
@@ -79,7 +79,7 @@
       {
         "title": "minimal-password-prompt",
         "startDate": "2021",
-        "description": "The most light weight npm package for getting secret user input through terminal in Node.js",
+        "description": "The most light weight npm package for getting secret user input through terminal in Node.js. No external dependencies.",
         "images": [
           "images/portfolio/minimal-password-prompt.png"
         ],
