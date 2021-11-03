@@ -168,12 +168,13 @@ header h1 {
 }
 
 #about h1 {
-	padding-top: 5%;
+	padding-top: 55px;
 	font: 18px/24px 'opensans-bold', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color: black;
 	text-align: center;
+	margin: 0;
 }
 
 .foto img {
@@ -309,8 +310,11 @@ header h1 {
 }
 
 .vertical-timeline-element-date {
+	/* padding: 0 !important;
+	margin: 0 !important; */
+	top: calc(30px - 0.5rem) !important;
 	padding: 0 !important;
-	margin: 0 !important;
+	margin: 0 14px !important;
 }
 
 @media only screen and (max-width: 1170px) {
@@ -449,13 +453,14 @@ header h1 {
 }
 
 .section-title {
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-top: 55px;
+	padding-bottom: 55px;
 	font: 18px/24px 'opensans-bold', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color: #fff;
 	text-align: center;
+	margin: 0;
 }
 
 .skill-icon {
