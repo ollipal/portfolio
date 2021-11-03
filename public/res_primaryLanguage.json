@@ -124,7 +124,8 @@
           "OpenCV",
           "Sphinx",
           "WebRTC",
-          "SocketIO"
+          "SocketIO",
+          "WebSocket"
         ]
       },
       {
