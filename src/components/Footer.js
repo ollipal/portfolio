@@ -18,7 +18,7 @@ class Footer extends Component {
       <footer>
         <div className="col-md-12">
           <div className="social-links">{networks}</div>
-          <div style={{paddingTop:"8px"}}>Contact: olli.paloviita@gmail.com</div>
+          <div style={{paddingTop:"8px"}}>Contact: <a style={{textDecoration: "underline"}} href = "mailto: olli.paloviita@gmail.com">olli.paloviita@gmail.com</a></div>
           <div className="copyright py-4 text-center">
             <div className="container">
               <small>
