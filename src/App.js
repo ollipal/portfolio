@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Hobbies from "./components/Hobbies";
+import { MdArrowDropDown } from "react-icons/md";
 
 class App extends Component {
 
@@ -17,6 +18,7 @@ class App extends Component {
       foo: "bar",
       resumeData: {},
       sharedData: {},
+      onTop: true,
     };
   }
 
@@ -49,6 +51,17 @@ class App extends Component {
       window.$primaryLanguage,
       window.$secondaryLanguageIconId
     );
+    this.handleScroll = this.handleScroll.bind(this);
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll() {
+    console.log(window.scrollY === 0);
+    this.setState({ onTop: window.scrollY === 0});
   }
 
   loadResumeFromPath(path) {
@@ -83,8 +96,20 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header sharedData={this.state.sharedData.basic_info} />
-        <div className="col-md-12 mx-auto text-center language">
+        <Header id="myHeader" sharedData={this.state.sharedData.basic_info} />
+        <div className="col-md-12 text-center language">
+          <MdArrowDropDown
+            style={{ color: "white", transition: "opacity 0.1ss ease-out", opacity: this.state.onTop ? 1 : 0}}
+            onClick={() => {
+              window.scroll({
+              top: window.innerHeight,
+              behavior: 'smooth'
+              });
+            }}
+            className="arrow"
+          />
+        </div>
+        <div className="col-md-12 text-center language">
           <div
             onClick={() =>
               this.applyPickedLanguage(
@@ -92,7 +117,7 @@ class App extends Component {
                 window.$secondaryLanguageIconId
               )
             }
-            style={{ display: "inline" }}
+            style={{ display: "none" }}
           >
             <span
               className="iconify language-icon mr-5"
@@ -108,7 +133,7 @@ class App extends Component {
                 window.$primaryLanguageIconId
               )
             }
-            style={{ display: "inline" }}
+            style={{ display: "none" }}
           >
             <span
               className="iconify language-icon"
