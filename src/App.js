@@ -15,10 +15,8 @@ class App extends Component {
   constructor(props) {
     super();
     this.state = {
-      foo: "bar",
       resumeData: {},
-      sharedData: {},
-      onTop: true,
+      sharedData: {}
     };
   }
 
@@ -51,17 +49,6 @@ class App extends Component {
       window.$primaryLanguage,
       window.$secondaryLanguageIconId
     );
-    this.handleScroll = this.handleScroll.bind(this);
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll() {
-    console.log(window.scrollY === 0);
-    this.setState({ onTop: window.scrollY === 0});
   }
 
   loadResumeFromPath(path) {
@@ -99,7 +86,7 @@ class App extends Component {
         <Header id="myHeader" sharedData={this.state.sharedData.basic_info} />
         <div className="col-md-12 text-center language">
           <MdArrowDropDown
-            style={{ color: "white", transition: "opacity 0.1ss ease-out", opacity: this.state.onTop ? 1 : 0}}
+            style={{ color: "white"}}
             onClick={() => {
               window.scroll({
               top: window.innerHeight,
