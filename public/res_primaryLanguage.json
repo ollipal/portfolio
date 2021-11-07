@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Hi",
-      "description": "I'm Olli Paloviita, a software engineer from Finland. I am currently finalizing master's degree studies at Aalto University, and looking for a thesis position.\n\nI have a very wide range of skills in different technologies and I have several years of experience in professional software development. I am interested in real-time communication, security, algorithms and cloud computing. I like to bring new ideas forward and I enjoy learning new skills. I am a team player who wants to help and learn from others.\n",
+      "description": "I'm Olli Paloviita, a software engineer from Finland. I am currently looking for a master's thesis / graduate position in solving challenges related new web technologies, security, cloud computing or algorithms. I like to bring new ideas forward and I enjoy learning new skills. I am a team player who wants to help and learn from others.\n",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -108,7 +108,7 @@
         "years": "June 2019 - August 2021",
         "text": [
           "Creation of a new kind of real time remote control robotics platform",
-          "• Lead the development of robotics remote control library in Python",
+          "• Leading the development of robotics remote control library in Python",
           "• Full Stack engineering with TypeScript, React and NodeJS",
           "• Firmware development with C++ for robotics",
           "• Onboarding, guiding and mentoring new team members"
@@ -133,7 +133,7 @@
         "company": "Aalto University",
         "title": "Teaching Assistant, Python",
         "years": "January 2019 - May 2019",
-        "text": ["Teaching assistant role for the advanced course in Python"],
+        "text": ["Teaching assistant role for the advanced course in Python."],
         "mainTech": [
           "Python"
         ]
@@ -162,9 +162,7 @@
         "title": "Trainee, R&D Laboratory",
         "years": "May 2017 - August 2018",
         "text": [
-          "• Research and testing of industrial valve designs",
-          "• Automation of test data processing into documents for repetitive tasks",
-          "• Development of better, more automated and less error prone testing and data processing tools"
+          "Research and testing of industrial valve designs. Automation of the processing of raw test data into reports."
         ],
         "mainTech": [
           "Python",
@@ -175,13 +173,12 @@
       {
         "type": "school",
         "company": "Aalto University",
-        "title": "Master's Degree",
+        "title": "MSc Computer Science",
         "years": "2019 - present",
         "text": [
-          "Major: Big Data and Large Scale Computing",
-          "Minor: Security and Cloud Computing",
-          "Grade average 4.31 / 5.00",
-          "(Grade average combines both Bachelor's and Master's degree, status in November 2021)"
+          "• Major track: Big Data and Large Scale Computing",
+          "• Minor in Security and Cloud Computing",
+          "• GPA 4.31 / 5.00 (Nov 2021)"
         ],
         "mainTech": [
           "Docker",
@@ -199,11 +196,12 @@
       {
         "type": "school",
         "company": "Aalto University",
-        "title": "Bachelor's Degree",
+        "title": "BSc Mechanical Engineering",
         "years": "2016 - 2019",
         "text": [
-          "Major: Mechanical Engineering",
-          "Minor: Computer Science"
+          "• Minor in Computer Science",
+          "• Thesis involved streamlining and algorithmically optimizing industrial valve testing processes",
+          "• GPA 4.58 / 5.00"
         ],
         "mainTech": [
           "CAD",
