@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Button } from "react-bootstrap";
 /* import { Icon } from "@iconify/react";
 import reactIcon from "@iconify/icons-logos/react"; */
 
@@ -82,6 +83,9 @@ class About extends Component {
                   </div>
                 </div>
               </div>
+            </div>
+            <div style={{width:"100%", display: "flex", alignItems: "center"}}>
+              <Button style={{margin:"auto", backgroundColor:"#01a2a5", borderColor:"transparent"}} className="font-trebuchet align-items-center mt-3" target="_blank" href="./CV-OlliPaloviita.pdf" size="lg">Download CV</Button>
             </div>
           </div>
         </div>
