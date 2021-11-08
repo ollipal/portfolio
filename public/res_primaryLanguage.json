@@ -173,10 +173,10 @@
       {
         "type": "school",
         "company": "Aalto University",
-        "title": "MSc Computer Science",
+        "title": "Master of Science (Technology)",
         "years": "2019 - present",
         "text": [
-          "• Major track: Big Data and Large Scale Computing",
+          "• Major in Computer Science, study track: Big Data and Large Scale Computing",
           "• Minor in Security and Cloud Computing",
           "• GPA 4.31 / 5.00 (Nov 2021)"
         ],
@@ -196,9 +196,10 @@
       {
         "type": "school",
         "company": "Aalto University",
-        "title": "BSc Mechanical Engineering",
+        "title": "Bachelor of Science (Technology)",
         "years": "2016 - 2019",
         "text": [
+          "• Major in Mechanical Engineering",
           "• Minor in Computer Science",
           "• Thesis involved streamlining and algorithmically optimizing industrial valve testing processes",
           "• GPA 4.58 / 5.00"
