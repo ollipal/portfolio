@@ -70,6 +70,7 @@ class Experience extends Component {
             </h4>
             <div style={{ textAlign: "left", marginTop: "8px", marginBottom: "4px" }}>
               {textProcessed}
+              {work.link && <a style={{color:"#53cbce"}} target="_blank" rel="noopener noreferrer" href={work.link}>link</a>}
             </div>
             <div style={{ textAlign: "left", marginTop: "15px", marginBottom: "4px" }}>
               {mainTech}

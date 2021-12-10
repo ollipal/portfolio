@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Hi",
-      "description": "I'm Olli Paloviita, a software engineer from Finland.\n\nI am currently looking for a master's thesis / graduate position in solving challenges related to new web technologies, security, cloud computing or algorithms. I like to bring new ideas forward and I enjoy learning new skills. I am a team player who wants to help and learn from others.\n",
+      "description": "I'm Olli Paloviita, a software engineer from Finland.\n\nI am interested in new web technologies, security, cloud computing and algorithms. I like to bring new ideas forward and I enjoy learning new skills. I am a team player who wants to help and learn from others.\n",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -102,6 +102,25 @@
     ],
     "experience": [
       {
+        "type": "hack",
+        "company": "Junction",
+        "title": "Hackathon challenge winner",
+        "years": "November 2021",
+        "text": [
+          "Challenge: Uniting empathy and gaming",
+          "Partner: Supercell",
+          "Real-time chat with advanced AI and user moderation"
+        ],
+        "mainTech": [
+          "Go",
+          "React",
+          "Javascript",
+          "D3.js",
+          "AWS"
+        ],
+        "link": "https://www.youtube.com/watch?v=NTxFXYAoQ7s"
+      },
+      {
         "type": "work",
         "company": "Surrogate.tv",
         "title": "Software Engineer",
@@ -141,7 +160,7 @@
       {
         "type": "hack",
         "company": "Junction",
-        "title": "Hackatchon challenge winner",
+        "title": "Hackathon challenge winner",
         "years": "November 2018",
         "text": [
           "Track: AI & Big Data",
