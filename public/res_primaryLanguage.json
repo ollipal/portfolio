@@ -112,11 +112,11 @@
           "Real-time chat with advanced AI and user moderation"
         ],
         "mainTech": [
-          "Go",
           "React",
           "Javascript",
-          "D3.js",
-          "AWS"
+          "Firebase",
+          "AWS",
+          "Docker"
         ],
         "link": "https://www.youtube.com/watch?v=NTxFXYAoQ7s"
       },
