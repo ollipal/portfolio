@@ -12,6 +12,33 @@
     },
     "projects": [
       {
+        "title": "botafar",
+        "startDate": "2022",
+        "description": "Add global remote controls and a real time livestream to your projects",
+        "images": [
+          "images/portfolio/botafar.png"
+        ],
+        "url": "https://botafar.com/",
+        "technologies": [
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "name": "Nodejs",
+            "class": "devicon-nodejs-plain"
+          },
+          {
+            "class": "devicon-firebase-plain",
+            "name": "Firebase"
+          }
+        ]
+      },
+      {
         "title": "classified.html",
         "startDate": "2020",
         "description": "Portable offline encryption solution that stores everything into a single .html file, which can be accessed from terminal and browser. No dependencies, fully written in Vanilla JavaScript.",
@@ -75,32 +102,27 @@
             "name": "Firebase"
           }
         ]
-      },
-      {
-        "title": "minimal-password-prompt",
-        "startDate": "2021",
-        "description": "The most light weight npm package for getting secret user input through terminal in Node.js. No external dependencies.",
-        "images": [
-          "images/portfolio/minimal-password-prompt.png"
-        ],
-        "url": "https://www.npmjs.com/package/minimal-password-prompt",
-        "technologies": [
-          {
-            "class": "devicon-nodejs-plain",
-            "name": "Node.js"
-          },
-          {
-            "class": "devicon-npm-original-wordmark",
-            "name": "npm"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
       }
     ],
     "experience": [
+      {
+        "type": "work",
+        "company": "Enfo Oyj",
+        "title": "Master's Thesis project",
+        "years": "January 2022 - July 2022",
+        "text": [
+          "A case study on how Managed Service Providers could benefit from Infrastructure as Code tools",
+          "• Implementing and analyzing Terraform module sharing strategies across projects and customers",
+          "• Best practices on how to to split existing Terraform code bases into reusable modules",
+          "• Interviewing Infrastructure as Code stakeholders for the company specifc insights"
+        ],
+        "mainTech": [
+          "Terraform",
+          "Azure",
+          "Python",
+          "Git"
+        ]
+      },
       {
         "type": "hack",
         "company": "Junction",
